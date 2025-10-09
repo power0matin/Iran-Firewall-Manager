@@ -1,4 +1,5 @@
-# 🔥 Iran Firewall Manager  
+# 🔥 Iran Firewall Manager
+
 ## [🇮🇷 مشاهده نسخه فارسی](README.fa.md)
 
 An **interactive and secure Bash script** to harden Iranian servers by strictly controlling which IPs and ports are allowed — ideal for tunneling setups.
@@ -8,31 +9,30 @@ An **interactive and secure Bash script** to harden Iranian servers by strictly 
 
 ## 🛡️ Key Features
 
-- ❌ Block all traffic (inbound & outbound) by default  
-- 🌍 Allow only specific ports from a **foreign (non-Iranian)** server IP  
-- 🔕 Disable ICMP (ping) to avoid discovery  
-- 💾 Auto-save rules via `iptables-persistent`  
-- 🔁 One-click **reset** to default open state  
-- 📱 Interactive emoji-powered menu – no editing needed  
-- 🔐 TCP / UDP / Both rule support  
-- 🧠 Remembers last used IP & ports  
-- 🧪 Ping test to verify foreign IP reachability  
-- 📋 View open ports and allowed IPs  
-- ✅ All interactive – no manual iptables usage required
+* ❌ Block all traffic (inbound & outbound) by default
+* 🌍 Allow only specific ports from a **foreign (non-Iranian)** server IP
+* 🔕 Disable ICMP (ping) to avoid discovery
+* 💾 Auto-save rules via `iptables-persistent`
+* 🔁 One-click **reset** to default open state
+* 📱 Interactive emoji-powered menu — no manual editing
+* 🔐 TCP / UDP / Both rule support
+* 🧠 Remembers last used IP & ports
+* 🧪 Ping test to verify foreign IP reachability
+* 📋 View open ports and allowed IPs
+* ✅ All interactive — no manual iptables usage required
 
 
 ## 🚀 One-Line Install & Run
 
-Run the **latest enhanced version (v2)** with all features:
+Install the **latest enhanced version (v2)**:
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/power0matin/Iran-Firewall-Manager/main/firewall-manager-v2.sh)
 ```
 
-> ✅ **Recommended**: Includes full menu, UDP support, persistent config, and port visibility.
+> ✅ Includes full menu, UDP support, persistent config, and port visibility.
 
-
-### 🧪 Legacy Version (Minimal Features)
+### 🧪 Legacy Version (Minimal)
 
 For the original minimal script:
 
@@ -40,7 +40,7 @@ For the original minimal script:
 bash <(curl -Ls https://raw.githubusercontent.com/power0matin/Iran-Firewall-Manager/main/firewall-manager.sh)
 ```
 
-> ⚠️ Note: No menu, memory, or advanced options.
+> ⚠️ No menu, memory, or advanced options.
 
 
 ## 📦 Example Output
@@ -74,33 +74,30 @@ bash <(curl -Ls https://raw.githubusercontent.com/power0matin/Iran-Firewall-Mana
 
 ## ⚠️ Warnings
 
-> 🛑 **Double-check the IP** before applying rules.
-> A wrong IP may **lock you out via SSH**. Test your tunnel before activating firewall.
-
-> 🧠 **Need DNS/NTP or other system ports?**
-> Add them manually like below before saving:
+> 🛑 **Double-check the IP** before applying rules — wrong IP may **lock you out via SSH**.
+> 🧠 If you need DNS/NTP or other system ports, add them manually:
 
 ```bash
-iptables -A OUTPUT -p udp --dport 53 -j ACCEPT  # DNS  
-iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP  
+iptables -A OUTPUT -p udp --dport 53 -j ACCEPT  # DNS
+iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP
 ```
 
-> 📡 UDP is now **fully supported** in interactive mode. Choose `TCP`, `UDP`, or `Both`.
+> 📡 UDP is fully supported in interactive mode. Choose `TCP`, `UDP`, or `Both`.
 
 
 ## 🧱 Project Roadmap
 
 | Phase          | Status      | 🔧 Planned Features                                                         | ✅ Details                                                     |
 | -------------- | ----------- | --------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| 🟢 **Phase-1** | ✅ Complete  | 🔒 Basic TCP rules<br>🌐 IP allowlist<br>🚫 Default deny                    | Base implementation, save support, basic menu                 |
-| 🟡 **Phase-2** | 🔛 Current  | 📱 Menu rework<br>📦 UDP support<br>🧠 Config memory<br>🖥️ Port visibility | Full rework with usability in mind                            |
-| 🟠 **Phase-3** | 🔜 Soon     | ⏱️ Auto-revert fail-safe<br>🧪 Config profiles<br>🌗 Day/Night modes        | Prevent lockout, switch between profiles, time-based policies |
-| 🔵 **Phase-4** | ⏳ Planned   | 🌍 GeoIP blocking<br>📅 Cron apply/reset<br>💬 Language menu (EN/FA)        | Auto-rules by schedule and region, multilingual               |
-| 🟣 **Phase-5** | 🧠 Advanced | 📊 Traffic monitor<br>🚨 Telegram alerts<br>📥 External logging             | Monitor usage, notify intrusions, log centralization          |
-| 🟤 **Phase-6** | 🧪 Future   | 🐳 Docker-aware firewall<br>🔗 API interface<br>👥 Multi-admin logs/audits  | Integration with containers and dashboards                    |
+| 🟢 **Phase 1** | ✅ Complete  | 🔒 Basic TCP rules<br>🌐 IP allowlist<br>🚫 Default deny                    | Base implementation, save support, basic menu                 |
+| 🟡 **Phase 2** | 🔛 Current  | 📱 Menu rework<br>📦 UDP support<br>🧠 Config memory<br>🖥️ Port visibility | Full rework with usability in mind                            |
+| 🟠 **Phase 3** | 🔜 Soon     | ⏱️ Auto-revert fail-safe<br>🧪 Config profiles<br>🌗 Day/Night modes        | Prevent lockout, switch between profiles, time-based policies |
+| 🔵 **Phase 4** | ⏳ Planned   | 🌍 GeoIP blocking<br>📅 Cron apply/reset<br>💬 Language menu (EN/FA)        | Auto-rules by schedule and region, multilingual               |
+| 🟣 **Phase 5** | 🧠 Advanced | 📊 Traffic monitor<br>🚨 Telegram alerts<br>📥 External logging             | Monitor usage, notify intrusions, log centralization          |
+| 🟤 **Phase 6** | 🧪 Future   | 🐳 Docker-aware firewall<br>🔗 API interface<br>👥 Multi-admin logs/audits  | Integration with containers and dashboards                    |
 
-> 🔧 **Current Phase:** `Phase 2` – Usability, UDP support, and config memory
-> 💡 Want a feature? [Open an Issue](https://github.com/power0matin/Iran-Firewall-Manager/issues)
+> 🔧 **Current Phase:** `Phase 2` — usability improvements, UDP support, and config memory.
+> 💡 Got a feature idea? [Open an Issue](https://github.com/power0matin/Iran-Firewall-Manager/issues)
 
 
 ## ⚙️ Requirements
@@ -119,10 +116,15 @@ iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP
 
 ## 📄 License
 
-[MIT License](LICENSE) – free for personal and commercial use.
+[MIT License](LICENSE) — free for personal and commercial use.
 
 
 ## ✨ Author
 
-Built with ❤️ by [power0matin](https://github.com/power0matin)
-If you found it useful, please ⭐ the repo and share it 🙌
+Built with ❤️ by [**power0matin**](https://github.com/power0matin)
+⭐ If you find it useful, please star the repo and share it 🙌
+
+
+
+docs(readme): improve Iran Firewall Manager README formatting and clarity
+```
