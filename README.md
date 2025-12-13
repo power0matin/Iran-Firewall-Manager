@@ -124,6 +124,14 @@ iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP
 Built with ❤️ by [**power0matin**](https://github.com/power0matin)
 ⭐ If you find it useful, please star the repo and share it 🙌
 
+## 📬 Contact
+
+**Matin Shahabadi (متین شاه‌آبادی / متین شاه آبادی)**
+
+* Website: [matinshahabadi.ir](https://matinshahabadi.ir)
+* Email: [me@matinshahabadi.ir](mailto:me@matinshahabadi.ir)
+* GitHub: [power0matin](https://github.com/power0matin)
+* LinkedIn: [matin-shahabadi](https://www.linkedin.com/in/matin-shahabadi)
 
 
 docs(readme): improve Iran Firewall Manager README formatting and clarity
