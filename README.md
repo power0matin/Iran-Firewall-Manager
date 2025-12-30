@@ -132,7 +132,3 @@ Built with ❤️ by [**power0matin**](https://github.com/power0matin)
 * Email: [me@matinshahabadi.ir](mailto:me@matinshahabadi.ir)
 * GitHub: [power0matin](https://github.com/power0matin)
 * LinkedIn: [matin-shahabadi](https://www.linkedin.com/in/matin-shahabadi)
-
-
-docs(readme): improve Iran Firewall Manager README formatting and clarity
-```
