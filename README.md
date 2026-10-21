@@ -1,4 +1,4 @@
-# 🔥 Iran Firewall Manager
+<h1 align="center">🔥 Iran Firewall Manager</h1>
 
 <!-- repo-badges:start -->
 <p align="center">
@@ -16,7 +16,6 @@ An **interactive and secure Bash script** to harden Iranian servers by strictly 
 
 > ✅ Tailored for tunnels like **Rathole v2**, **Backhaul**, **Xray**, or private proxy systems.
 
-
 ## 🛡️ Key Features
 
 * ❌ Block all traffic (inbound & outbound) by default
@@ -30,7 +29,6 @@ An **interactive and secure Bash script** to harden Iranian servers by strictly 
 * 🧪 Ping test to verify foreign IP reachability
 * 📋 View open ports and allowed IPs
 * ✅ All interactive — no manual iptables usage required
-
 
 ## 🚀 One-Line Install & Run
 
@@ -52,7 +50,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/power0matin/Iran-Firewall-Mana
 
 > ⚠️ No menu, memory, or advanced options.
 
-
 ## 📦 Example Output
 
 ```bash
@@ -69,7 +66,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/power0matin/Iran-Firewall-Mana
 [✅] Firewall rules applied successfully.
 ```
 
-
 ## 📋 Menu Options
 
 ```
@@ -80,7 +76,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/power0matin/Iran-Firewall-Mana
 4) Enable secure mode (allow only selected IP and ports)
 0) Exit
 ```
-
 
 ## ⚠️ Warnings
 
@@ -93,7 +88,6 @@ iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP
 ```
 
 > 📡 UDP is fully supported in interactive mode. Choose `TCP`, `UDP`, or `Both`.
-
 
 ## 🧱 Project Roadmap
 
@@ -109,13 +103,11 @@ iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP
 > 🔧 **Current Phase:** `Phase 2` — usability improvements, UDP support, and config memory.
 > 💡 Got a feature idea? [Open an Issue](https://github.com/power0matin/Iran-Firewall-Manager/issues)
 
-
 ## ⚙️ Requirements
 
 * ✅ Ubuntu or Debian-based system
 * 🧑‍💻 Root privileges
 * 📦 `iptables`, `iptables-persistent` (auto-installed)
-
 
 ## ✅ Tested On
 
@@ -123,11 +115,9 @@ iptables -A OUTPUT -p udp --dport 123 -j ACCEPT # NTP
 * Debian 11 / 12
 * VPS: KVM, NAT, OpenVZ (IPv4 only)
 
-
 ## 📄 License
 
 [MIT License](LICENSE) — free for personal and commercial use.
-
 
 ## ✨ Author
 
@@ -142,3 +132,19 @@ Built with ❤️ by [**power0matin**](https://github.com/power0matin)
 * Email: [me@matinshahabadi.ir](mailto:me@matinshahabadi.ir)
 * GitHub: [power0matin](https://github.com/power0matin)
 * LinkedIn: [matin-shahabadi](https://www.linkedin.com/in/matin-shahabadi)
+
+<!-- Copy-paste in your Readme.md file -->
+<p align="center">
+  <a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history?repo_id=1025586233" target="_blank" style="display: block" align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history/thumbnail.png?repo_id=1025586233&amp;image_size=auto&amp;color_scheme=dark" width="721" height="auto">
+      <img alt="Star History of power0matin/Iran-Firewall-Manager" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history/thumbnail.png?repo_id=1025586233&amp;image_size=auto&amp;color_scheme=light" width="721" height="auto">
+    </picture>
+  </a>
+</p>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
+
+<p align="center">
+  Created by <a href="https://github.com/power0matin">power0matin</a>
+</p>
